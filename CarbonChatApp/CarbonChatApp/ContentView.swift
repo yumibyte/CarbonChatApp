@@ -19,6 +19,10 @@ struct ContentView: View {
             Alert(title: Text("Please Enable Location Access in Settings Panel"))
         }
     }
+    
+    
+
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -49,6 +53,7 @@ struct MapView: UIViewRepresentable {
         manager.startUpdatingLocation()
         return map
     }
+    
     func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {
         
     }
