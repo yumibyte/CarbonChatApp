@@ -32,7 +32,7 @@ enum CategoryType: Int {
 }
 
 // 2
-class AttractionAnnotation: NSObject, MKAnnotation {
+class CategoryAnnotation: NSObject, MKAnnotation {
   // 3
   let coordinate: CLLocationCoordinate2D
   let title: String?

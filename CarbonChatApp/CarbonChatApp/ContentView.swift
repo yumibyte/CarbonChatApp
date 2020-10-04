@@ -18,11 +18,7 @@ struct ContentView: View {
             
             Alert(title: Text("Please Enable Location Access in Settings Panel"))
         }
-    }
-    
-    
-
-    
+    }  
 }
 
 struct ContentView_Previews: PreviewProvider {
