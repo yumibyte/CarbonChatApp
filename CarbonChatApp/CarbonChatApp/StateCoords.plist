@@ -8,7 +8,7 @@
 		<key>location</key>
 		<string>{34.42581,-118.60089}</string>
 		<key>type</key>
-		<string>1</string>
+		<integer>1</integer>
 		<key>subtitle</key>
 		<string>Intensity: 6/10</string>
 	</dict>
@@ -18,7 +18,7 @@
 		<key>location</key>
 		<string>{37.293997, -120.151451}</string>
 		<key>type</key>
-		<string>1</string>
+		<integer>1</integer>
 		<key>subtitle</key>
 		<string>Intensity: 8/10</string>
 	</dict>
@@ -28,7 +28,7 @@
 		<key>location</key>
 		<string>{34.42430,-118.60074}</string>
 		<key>type</key>
-		<string>1</string>
+		<integer>1</integer>
 		<key>subtitle</key>
 		<string>Intensity: 9/10</string>
 	</dict>
