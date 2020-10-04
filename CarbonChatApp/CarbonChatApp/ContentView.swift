@@ -2,53 +2,6 @@ import SwiftUI
 import MapKit
 
 
-
-struct ContentView: View {
-    
-    @State var manager = CLLocationManager()
-    @State var alert = false
-    
-    var body: some View {
-        MapView(manager: $manager, alert: $alert).alert(isPresented: $alert) {
-            
-            Alert(title: Text("Please Enable Location Access in Settings Panel"))
-        }
-    }
-    
-    
-    // 1
-    func addAttractionPins() {
-        guard let categories = Category.plist("StateCoords")
-                as? [[String: String]] else { return }
-        
-
-        // 2
-        for category in categories {
-          let coordinate = Category.parseCoord(dict: attraction, fieldName: "location")
-          let title = category["name"] ?? ""
-          let typeRawValue = Int(category["type"] ?? "0") ?? 0
-          let type = CategoryType(rawValue: typeRawValue) ?? .misc
-          let subtitle = category["subtitle"] ?? ""
-          // 3
-          let annotation = CategoryAnnotation(
-            coordinate: coordinate,
-            title: title,
-            subtitle: subtitle,
-            type: type)
-          mapView.addAnnotation(annotation)
-        }
-    }
-    
-    
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-
-
 struct MapView: UIViewRepresentable {
 
     @Binding var manager: CLLocationManager
@@ -58,6 +11,8 @@ struct MapView: UIViewRepresentable {
     func makeCoordinator() -> Coordinator {
         return Coordinator(parent1: self)
     }
+    
+    
     
     func makeUIView(context: UIViewRepresentableContext<MapView>) -> MKMapView {
         
@@ -113,5 +68,46 @@ struct MapView: UIViewRepresentable {
                 
             }
         }
+        // 1
+        func addAttractionPins() {
+            guard let categories = Category.plist("StateCoords")
+                    as? [[String: String]] else { return }
+            // 2
+            for category in categories {
+              let coordinate = Category.parseCoord(dict: category, fieldName: "location")
+              let title = category["name"] ?? ""
+              let typeRawValue = Int(category["type"] ?? "0") ?? 0
+              let type = CategoryType(rawValue: typeRawValue) ?? .misc
+              let subtitle = category["subtitle"] ?? ""
+              // 3
+              let annotation = CategoryAnnotation(
+                coordinate: coordinate,
+                title: title,
+                subtitle: subtitle,
+                type: type)
+                self.parent.map.addAnnotation(annotation)
+            }
+        }
     }
 }
+
+struct ContentView: View {
+    
+    @State var manager = CLLocationManager()
+    @State var alert = false
+    
+    var body: some View {
+        MapView(manager: $manager, alert: $alert).alert(isPresented: $alert) {
+            
+            Alert(title: Text("Please Enable Location Access in Settings Panel"))
+        }
+    }
+    
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+

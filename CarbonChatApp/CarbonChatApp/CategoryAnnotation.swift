@@ -9,6 +9,7 @@ import MapKit
 
 // 1
 enum CategoryType: Int {
+  case misc = 0
   case commercial
   case industrial
   case residential
@@ -17,6 +18,8 @@ enum CategoryType: Int {
   
   func image() -> UIImage {
     switch self {
+    case .misc:
+      return UIImage(imageLiteralResourceName: "unknown")
     case .commercial:
       return UIImage(imageLiteralResourceName: "commercial")
     case .industrial:
