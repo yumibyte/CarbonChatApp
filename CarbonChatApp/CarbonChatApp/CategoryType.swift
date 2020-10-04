@@ -9,7 +9,7 @@ import MapKit
 
 // 1
 enum CategoryType: Int {
-  case commercial = 0
+  case commercial
   case industrial
   case residential
   case electricPower
