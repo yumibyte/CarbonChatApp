@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16A20BC2252A1A3F0049B2F7 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A20BC1252A1A3F0049B2F7 /* CategoryType.swift */; };
+		16A20BC2252A1A3F0049B2F7 /* CategoryAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A20BC1252A1A3F0049B2F7 /* CategoryAnnotation.swift */; };
 		16A20BC7252A1AFE0049B2F7 /* CategoryAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A20BC6252A1AFE0049B2F7 /* CategoryAnnotationView.swift */; };
 		16A20BCC252A2B270049B2F7 /* StateCoords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16A20BCB252A2B270049B2F7 /* StateCoords.plist */; };
 		16A20BD1252A2CF90049B2F7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A20BD0252A2CF90049B2F7 /* Category.swift */; };
+		16A20BD6252A2E190049B2F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A20BD5252A2E190049B2F7 /* ContentView.swift */; };
 		16B0DB562529875200A27629 /* CarbonChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B0DB552529875200A27629 /* CarbonChatAppApp.swift */; };
-		16B0DB582529875200A27629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B0DB572529875200A27629 /* ContentView.swift */; };
 		16B0DB5A2529875400A27629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B0DB592529875400A27629 /* Assets.xcassets */; };
 		16B0DB5D2529875400A27629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B0DB5C2529875400A27629 /* Preview Assets.xcassets */; };
 		16B0DB682529875400A27629 /* CarbonChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B0DB672529875400A27629 /* CarbonChatAppTests.swift */; };
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16A20BC1252A1A3F0049B2F7 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
+		16A20BC1252A1A3F0049B2F7 /* CategoryAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAnnotation.swift; sourceTree = "<group>"; };
 		16A20BC6252A1AFE0049B2F7 /* CategoryAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAnnotationView.swift; sourceTree = "<group>"; };
 		16A20BCB252A2B270049B2F7 /* StateCoords.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = StateCoords.plist; sourceTree = "<group>"; };
 		16A20BD0252A2CF90049B2F7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		16A20BD5252A2E190049B2F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16B0DB522529875200A27629 /* CarbonChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B0DB552529875200A27629 /* CarbonChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonChatAppApp.swift; sourceTree = "<group>"; };
-		16B0DB572529875200A27629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16B0DB592529875400A27629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16B0DB5C2529875400A27629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16B0DB5E2529875400A27629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				16B0DB552529875200A27629 /* CarbonChatAppApp.swift */,
-				16B0DB572529875200A27629 /* ContentView.swift */,
+				16A20BD5252A2E190049B2F7 /* ContentView.swift */,
 				16A20BD0252A2CF90049B2F7 /* Category.swift */,
-				16A20BC1252A1A3F0049B2F7 /* CategoryType.swift */,
+				16A20BC1252A1A3F0049B2F7 /* CategoryAnnotation.swift */,
 				16A20BC6252A1AFE0049B2F7 /* CategoryAnnotationView.swift */,
 				16A20BCB252A2B270049B2F7 /* StateCoords.plist */,
 				16B0DB592529875400A27629 /* Assets.xcassets */,
@@ -272,10 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16B0DB582529875200A27629 /* ContentView.swift in Sources */,
 				16A20BD1252A2CF90049B2F7 /* Category.swift in Sources */,
+				16A20BD6252A2E190049B2F7 /* ContentView.swift in Sources */,
 				16B0DB562529875200A27629 /* CarbonChatAppApp.swift in Sources */,
-				16A20BC2252A1A3F0049B2F7 /* CategoryType.swift in Sources */,
+				16A20BC2252A1A3F0049B2F7 /* CategoryAnnotation.swift in Sources */,
 				16A20BC7252A1AFE0049B2F7 /* CategoryAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

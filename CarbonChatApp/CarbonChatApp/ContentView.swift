@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  CarbonChatApp
-//
-//  Created by Ashley Raigosa on 10/3/20.
-//
-
 import SwiftUI
 import MapKit
 
@@ -21,25 +14,32 @@ struct ContentView: View {
             Alert(title: Text("Please Enable Location Access in Settings Panel"))
         }
     }
+    
+    
     // 1
-    guard let categories = Category.plist("StateCoords")
-      as? [[String: String]] else { return }
+    func addAttractionPins() {
+        guard let categories = Category.plist("StateCoords")
+                as? [[String: String]] else { return }
+        
 
-    // 2
-    for category in categories {
-      let coordinate = Category.parseCoord(dict: attraction, fieldName: "location")
-      let title = attraction["name"] ?? ""
-      let typeRawValue = Int(attraction["type"] ?? "0") ?? 0
-      let type = AttractionType(rawValue: typeRawValue) ?? .misc
-      let subtitle = attraction["subtitle"] ?? ""
-      // 3
-      let annotation = AttractionAnnotation(
-        coordinate: coordinate,
-        title: title,
-        subtitle: subtitle,
-        type: type)
-      mapView.addAnnotation(annotation)
+        // 2
+        for category in categories {
+          let coordinate = Category.parseCoord(dict: attraction, fieldName: "location")
+          let title = category["name"] ?? ""
+          let typeRawValue = Int(category["type"] ?? "0") ?? 0
+          let type = CategoryType(rawValue: typeRawValue) ?? .misc
+          let subtitle = category["subtitle"] ?? ""
+          // 3
+          let annotation = CategoryAnnotation(
+            coordinate: coordinate,
+            title: title,
+            subtitle: subtitle,
+            type: type)
+          mapView.addAnnotation(annotation)
+        }
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
