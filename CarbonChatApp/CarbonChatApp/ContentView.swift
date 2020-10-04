@@ -1,19 +1,15 @@
+
+
+
 import SwiftUI
 import MapKit
 
-//let park = Park(filename: "MagicMountain")
 let mapView = MKMapView(frame: UIScreen.main.bounds)
 
 struct MapView: UIViewRepresentable {
-  func makeUIView(context: Context) -> MKMapView {
-//
-//    // Think of a span as a tv size, measure from one corner to another
-//    let span = MKCoordinateSpan(latitudeDelta: fabs(latDelta), longitudeDelta: 0.0)
-//    let region = MKCoordinateRegion(center: park.midCoordinate, span: span)
-//
-//    mapView.region = region
-//    mapView.delegate = context.coordinator
+    
 
+  func makeUIView(context: Context) -> MKMapView {
     return mapView
   }
 
@@ -50,11 +46,15 @@ struct MapView: UIViewRepresentable {
 }
 
 struct ContentView: View {
-  @State var mapBoundary = false
-  @State var mapOverlay = false
-  @State var mapPins = false
-  @State var mapCharacterLocation = false
-  @State var mapRoute = false
+    @State var mapBoundary = false
+    @State var mapOverlay = false
+    @State var mapPins = false
+    @State var mapCharacterLocation = false
+    @State var mapRoute = false
+    @State var stateInformaton: [[String: String]]?
+    @State var carbonLevelCommercial = 22
+    
+    
 
   var body: some View {
     NavigationView {
@@ -107,6 +107,30 @@ struct ContentView: View {
 
   func addCateogoryPins() {
     // 1
+    var stateInformationCalifornia = [
+        ["name": "commercial",
+         "location": "{34.42581,-118.60089}",
+         "type": "1",
+         "subtitle": carbonLevelCommercial],
+        ["name": "commercial",
+         "location": "{34.42581,-118.60089}",
+         "type": "1",
+         "subtitle": carbonLevelndustrial],
+        ["name": "commercial",
+         "location": "{34.42581,-118.60089}",
+         "type": "1",
+         "subtitle": carbonLevelResidential],
+        ["name": "commercial",
+         "location": "{34.42581,-118.60089}",
+         "type": "1",
+         "subtitle": carbonLevelTransportation],
+        ["name": "commercial",
+         "location": "{34.42581,-118.60089}",
+         "type": "1",
+         "subtitle": carbonLevelElectricPower]
+        
+    ]
+    
     guard let categories = Category.plist("StateCoords") as?
             [[String: String]] else { return }
 
