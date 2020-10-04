@@ -52,11 +52,11 @@ struct ContentView: View {
     @State var mapCharacterLocation = false
     @State var mapRoute = false
     @State var stateInformaton: [[String: String]]?
-    @State var carbonLevelCommercial = 22.3
-    @State var carbonLevelIndustrial = 40.2
-    @State var carbonLevelResidential = 64.4
-    @State var carbonLevelTransportation = 80.3
-    @State var carbonLevelElectricPower = 100.8
+    @State var carbonLevelCommercial = "22.3"
+    @State var carbonLevelIndustrial = "40.2"
+    @State var carbonLevelResidential = "64.4"
+    @State var carbonLevelTransportation = "80.3"
+    @State var carbonLevelElectricPower = "100.8"
     
 
     var body: some View {
@@ -111,41 +111,41 @@ struct ContentView: View {
     func addCateogoryPins() {
     // 1
         var stateInformationCalifornia = [
-            ["name": "commercial",
-             "location": "{34.42581,-118.60089}",
+            ["name": "Commercial",
+             "location": "{34,-118.60089}",
              "type": "1",
              "subtitle": carbonLevelCommercial],
-            ["name": "commercial",
-             "location": "{34.42581,-118.60089}",
+            ["name": "Industrial",
+             "location": "{36,-118.60089}",
              "type": "1",
              "subtitle": carbonLevelIndustrial],
-            ["name": "commercial",
-             "location": "{34.42581,-118.60089}",
+            ["name": "Residential",
+             "location": "(32,-125.60089}",
              "type": "1",
              "subtitle": carbonLevelResidential],
-            ["name": "commercial",
-             "location": "{34.42581,-118.60089}",
+            ["name": "Transportation",
+             "location": "{35,-125.60089}",
              "type": "1",
              "subtitle": carbonLevelTransportation],
-            ["name": "commercial",
-             "location": "{34.42581,-118.60089}",
+            ["name": "ElectricPower",
+             "location": "{38.42581,-125.60089}",
              "type": "1",
              "subtitle": carbonLevelElectricPower]
-        
         ]
     
-        guard let categories = Category.plist("StateCoords") as?
-            [[String: String]] else { return }
+//        guard let categories = Category.plist("StateCoords") as?
+//            [[String: String]] else { return }
 
         // 2
-        for category in categories {
-            let coordinate = Category.parseCoord(dict: category, fieldName: "location")
-            let title = category["name"] ?? ""
-            let typeRawValue = Int(category["type"] ?? "0") ?? 0
-            let type = CategoryType(rawValue: typeRawValue) ?? .misc
-            let subtitle = category["subtitle"] ?? ""
+        for category in stateInformationCalifornia {
+            let coordinate: CLLocationCoordinate2D = Category.parseCoord(dict: category, fieldName: "location")
+            let title: String = category["name"] as! String
+            let typeRawValue: Int = 1
+            let type: CategoryType = CategoryType(rawValue: typeRawValue) ?? .misc
+            let subtitle: String = category["subtitle"]!
             // 3
             let annotation = CategoryAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
+            
             mapView.addAnnotation(annotation)
         }
     }
