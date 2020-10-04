@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>California</key>
-	<string>{37.293997, -120.151451}</string>
-</dict>
+<array>
+	<dict>
+		<key>name</key>
+		<string>commercial</string>
+		<key>location</key>
+		<string>{34.42581,-118.60089}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Intensity: 6/10</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>industrial</string>
+		<key>location</key>
+		<string>{37.293997, -120.151451}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Intensity: 8/10</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>residential</string>
+		<key>location</key>
+		<string>{34.42430,-118.60074}</string>
+		<key>type</key>
+		<string>1</string>
+		<key>subtitle</key>
+		<string>Intensity: 9/10</string>
+	</dict>
+</array>
 </plist>
