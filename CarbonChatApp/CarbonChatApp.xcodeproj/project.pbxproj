@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16A20BC2252A1A3F0049B2F7 /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A20BC1252A1A3F0049B2F7 /* CategoryType.swift */; };
+		16A20BC7252A1AFE0049B2F7 /* CategoryAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A20BC6252A1AFE0049B2F7 /* CategoryAnnotationView.swift */; };
+		16A20BCC252A2B270049B2F7 /* StateCoords.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16A20BCB252A2B270049B2F7 /* StateCoords.plist */; };
+		16A20BD1252A2CF90049B2F7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A20BD0252A2CF90049B2F7 /* Category.swift */; };
+		16B0DB562529875200A27629 /* CarbonChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B0DB552529875200A27629 /* CarbonChatAppApp.swift */; };
+		16B0DB582529875200A27629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B0DB572529875200A27629 /* ContentView.swift */; };
+		16B0DB5A2529875400A27629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B0DB592529875400A27629 /* Assets.xcassets */; };
+		16B0DB5D2529875400A27629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B0DB5C2529875400A27629 /* Preview Assets.xcassets */; };
+		16B0DB682529875400A27629 /* CarbonChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B0DB672529875400A27629 /* CarbonChatAppTests.swift */; };
+		16B0DB732529875400A27629 /* CarbonChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B0DB722529875400A27629 /* CarbonChatAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16B0DB642529875400A27629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16B0DB4A2529875200A27629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16B0DB512529875200A27629;
+			remoteInfo = CarbonChatApp;
+		};
+		16B0DB6F2529875400A27629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16B0DB4A2529875200A27629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16B0DB512529875200A27629;
+			remoteInfo = CarbonChatApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16A20BC1252A1A3F0049B2F7 /* CategoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
+		16A20BC6252A1AFE0049B2F7 /* CategoryAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAnnotationView.swift; sourceTree = "<group>"; };
+		16A20BCB252A2B270049B2F7 /* StateCoords.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = StateCoords.plist; sourceTree = "<group>"; };
+		16A20BD0252A2CF90049B2F7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		16B0DB522529875200A27629 /* CarbonChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B0DB552529875200A27629 /* CarbonChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonChatAppApp.swift; sourceTree = "<group>"; };
+		16B0DB572529875200A27629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16B0DB592529875400A27629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16B0DB5C2529875400A27629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16B0DB5E2529875400A27629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16B0DB632529875400A27629 /* CarbonChatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonChatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B0DB672529875400A27629 /* CarbonChatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonChatAppTests.swift; sourceTree = "<group>"; };
+		16B0DB692529875400A27629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16B0DB6E2529875400A27629 /* CarbonChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B0DB722529875400A27629 /* CarbonChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonChatAppUITests.swift; sourceTree = "<group>"; };
+		16B0DB742529875400A27629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16B0DB4F2529875200A27629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B0DB602529875400A27629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B0DB6B2529875400A27629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16B0DB492529875200A27629 = {
+			isa = PBXGroup;
+			children = (
+				16B0DB542529875200A27629 /* CarbonChatApp */,
+				16B0DB662529875400A27629 /* CarbonChatAppTests */,
+				16B0DB712529875400A27629 /* CarbonChatAppUITests */,
+				16B0DB532529875200A27629 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16B0DB532529875200A27629 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16B0DB522529875200A27629 /* CarbonChatApp.app */,
+				16B0DB632529875400A27629 /* CarbonChatAppTests.xctest */,
+				16B0DB6E2529875400A27629 /* CarbonChatAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16B0DB542529875200A27629 /* CarbonChatApp */ = {
+			isa = PBXGroup;
+			children = (
+				16B0DB552529875200A27629 /* CarbonChatAppApp.swift */,
+				16B0DB572529875200A27629 /* ContentView.swift */,
+				16A20BD0252A2CF90049B2F7 /* Category.swift */,
+				16A20BC1252A1A3F0049B2F7 /* CategoryType.swift */,
+				16A20BC6252A1AFE0049B2F7 /* CategoryAnnotationView.swift */,
+				16A20BCB252A2B270049B2F7 /* StateCoords.plist */,
+				16B0DB592529875400A27629 /* Assets.xcassets */,
+				16B0DB5E2529875400A27629 /* Info.plist */,
+				16B0DB5B2529875400A27629 /* Preview Content */,
+			);
+			path = CarbonChatApp;
+			sourceTree = "<group>";
+		};
+		16B0DB5B2529875400A27629 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				16B0DB5C2529875400A27629 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16B0DB662529875400A27629 /* CarbonChatAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				16B0DB672529875400A27629 /* CarbonChatAppTests.swift */,
+				16B0DB692529875400A27629 /* Info.plist */,
+			);
+			path = CarbonChatAppTests;
+			sourceTree = "<group>";
+		};
+		16B0DB712529875400A27629 /* CarbonChatAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16B0DB722529875400A27629 /* CarbonChatAppUITests.swift */,
+				16B0DB742529875400A27629 /* Info.plist */,
+			);
+			path = CarbonChatAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16B0DB512529875200A27629 /* CarbonChatApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B0DB772529875400A27629 /* Build configuration list for PBXNativeTarget "CarbonChatApp" */;
+			buildPhases = (
+				16B0DB4E2529875200A27629 /* Sources */,
+				16B0DB4F2529875200A27629 /* Frameworks */,
+				16B0DB502529875200A27629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarbonChatApp;
+			productName = CarbonChatApp;
+			productReference = 16B0DB522529875200A27629 /* CarbonChatApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16B0DB622529875400A27629 /* CarbonChatAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B0DB7A2529875400A27629 /* Build configuration list for PBXNativeTarget "CarbonChatAppTests" */;
+			buildPhases = (
+				16B0DB5F2529875400A27629 /* Sources */,
+				16B0DB602529875400A27629 /* Frameworks */,
+				16B0DB612529875400A27629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16B0DB652529875400A27629 /* PBXTargetDependency */,
+			);
+			name = CarbonChatAppTests;
+			productName = CarbonChatAppTests;
+			productReference = 16B0DB632529875400A27629 /* CarbonChatAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16B0DB6D2529875400A27629 /* CarbonChatAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B0DB7D2529875400A27629 /* Build configuration list for PBXNativeTarget "CarbonChatAppUITests" */;
+			buildPhases = (
+				16B0DB6A2529875400A27629 /* Sources */,
+				16B0DB6B2529875400A27629 /* Frameworks */,
+				16B0DB6C2529875400A27629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16B0DB702529875400A27629 /* PBXTargetDependency */,
+			);
+			name = CarbonChatAppUITests;
+			productName = CarbonChatAppUITests;
+			productReference = 16B0DB6E2529875400A27629 /* CarbonChatAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16B0DB4A2529875200A27629 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					16B0DB512529875200A27629 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					16B0DB622529875400A27629 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 16B0DB512529875200A27629;
+					};
+					16B0DB6D2529875400A27629 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 16B0DB512529875200A27629;
+					};
+				};
+			};
+			buildConfigurationList = 16B0DB4D2529875200A27629 /* Build configuration list for PBXProject "CarbonChatApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16B0DB492529875200A27629;
+			productRefGroup = 16B0DB532529875200A27629 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16B0DB512529875200A27629 /* CarbonChatApp */,
+				16B0DB622529875400A27629 /* CarbonChatAppTests */,
+				16B0DB6D2529875400A27629 /* CarbonChatAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16B0DB502529875200A27629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A20BCC252A2B270049B2F7 /* StateCoords.plist in Resources */,
+				16B0DB5D2529875400A27629 /* Preview Assets.xcassets in Resources */,
+				16B0DB5A2529875400A27629 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B0DB612529875400A27629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B0DB6C2529875400A27629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16B0DB4E2529875200A27629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B0DB582529875200A27629 /* ContentView.swift in Sources */,
+				16A20BD1252A2CF90049B2F7 /* Category.swift in Sources */,
+				16B0DB562529875200A27629 /* CarbonChatAppApp.swift in Sources */,
+				16A20BC2252A1A3F0049B2F7 /* CategoryType.swift in Sources */,
+				16A20BC7252A1AFE0049B2F7 /* CategoryAnnotationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B0DB5F2529875400A27629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B0DB682529875400A27629 /* CarbonChatAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B0DB6A2529875400A27629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B0DB732529875400A27629 /* CarbonChatAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16B0DB652529875400A27629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16B0DB512529875200A27629 /* CarbonChatApp */;
+			targetProxy = 16B0DB642529875400A27629 /* PBXContainerItemProxy */;
+		};
+		16B0DB702529875400A27629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16B0DB512529875200A27629 /* CarbonChatApp */;
+			targetProxy = 16B0DB6F2529875400A27629 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16B0DB752529875400A27629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16B0DB762529875400A27629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16B0DB782529875400A27629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CarbonChatApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3ZVXV95L56;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CarbonChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AshleyRaigosa.CarbonChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16B0DB792529875400A27629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CarbonChatApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3ZVXV95L56;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CarbonChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AshleyRaigosa.CarbonChatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16B0DB7B2529875400A27629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZVXV95L56;
+				INFOPLIST_FILE = CarbonChatAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AshleyRaigosa.CarbonChatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbonChatApp.app/CarbonChatApp";
+			};
+			name = Debug;
+		};
+		16B0DB7C2529875400A27629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZVXV95L56;
+				INFOPLIST_FILE = CarbonChatAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AshleyRaigosa.CarbonChatAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbonChatApp.app/CarbonChatApp";
+			};
+			name = Release;
+		};
+		16B0DB7E2529875400A27629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZVXV95L56;
+				INFOPLIST_FILE = CarbonChatAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AshleyRaigosa.CarbonChatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarbonChatApp;
+			};
+			name = Debug;
+		};
+		16B0DB7F2529875400A27629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZVXV95L56;
+				INFOPLIST_FILE = CarbonChatAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AshleyRaigosa.CarbonChatAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarbonChatApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16B0DB4D2529875200A27629 /* Build configuration list for PBXProject "CarbonChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B0DB752529875400A27629 /* Debug */,
+				16B0DB762529875400A27629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B0DB772529875400A27629 /* Build configuration list for PBXNativeTarget "CarbonChatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B0DB782529875400A27629 /* Debug */,
+				16B0DB792529875400A27629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B0DB7A2529875400A27629 /* Build configuration list for PBXNativeTarget "CarbonChatAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B0DB7B2529875400A27629 /* Debug */,
+				16B0DB7C2529875400A27629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B0DB7D2529875400A27629 /* Build configuration list for PBXNativeTarget "CarbonChatAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B0DB7E2529875400A27629 /* Debug */,
+				16B0DB7F2529875400A27629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16B0DB4A2529875200A27629 /* Project object */;
+}
